@@ -1,0 +1,35 @@
+ (HEAD -> main, tag: v2.28) 调整UART初始化以支持可选的时钟分频div2，修改波特率计算方式并移除SYS_UartClkDiv(7)调用，更新注释和寄存器设置。
+ (tag: v2.27) 提交更新：修改了lks32mc45x_sys.h文件头注释格式，增加了SYS_ResetPeripheral、SYS_ResetPeripheralInternal和SYS_ResetIO三个函数的声明，并删除了LKS32MC45x用户手册PDF文件。
+ (tag: v2.25) 更新lks32mc45x_sys.h文件头信息，简化描述并调整格式。
+ (tag: v2.24) Update version.txt
+ (tag: v2.26, tag: V2.23) 增加强制类型转换(uint32_t)以确保能正确赋值 reg1 |= ((uint32_t)AFE_XCSEL_x << 8);
+ (tag: V2.22) FLASH_Program里写完flash之后增加对写入成功的判断，并返回flash写入状态
+ (tag: V2.21) 更新dsp库函数
+ (tag: V2.20) fix(lks32mc45x_can.h): CANFD发送增加brs参数
+ (tag: V2.19) 更新can器件库
+ (tag: V2.18) BUG修复，配置完成CANID后将can模块配置成正常输出模式
+ (tag: v2.17) 更新DMA_IE的赋值方式
+ (tag: v2.16) 修改spi波特率计算公式错误的问题
+ (tag: v2.15) fix(UART): 固定SYS_CLK_DIV2的数值以免两串口波特率不同时出现冲突
+ (tag: v2.14) fix(SPI): 往SPI_TXDATA寄存器中写数触发SPI传输之前需要先判断CS信号是否为高电平
+ (tag: V2.13) 更正timer_cfg配置，更正exti定义
+ (tag: V2.12) mcpwm.h 修改MCPWM_UPDATE_REG为MCPWM0_UPDATE_REG afe.h 解决不选择c99报错的问题
+ (tag: v2.11) <fix>(<gpio.c>): <修正外部中断配置> <fix>(<trim.s>): <修正读芯片UID函数>
+ (tag: V2.1) 从例程中更新库函数到最新
+ (tag: v1.9) pll使能后添加延时 SoftDelay()
+ (tag: v1.8) 更新TRIM_ReadUid(u32 *)函数，添加注释
+ (tag: v1.7) 修改GPIO_WriteBit函数中bsrr和brr写反笔误
+ (tag: v1.6) 1.修正opa4寄存器配置笔误 2.初始化时添加sys_sft_rst寄存器配置复位，添加读取校adc、dac校正值部分
+ (tag: v1.5) 修正UTIMERx_CFG寄存器对应位配置，修正opa5反馈电阻配置对应SYS_AFE_REG1配置
+ (tag: v1.4) 更改 MCPWM_AUEN自动更新使能寄存器BIT13~BIT15 定义错误
+ (tag: V1.3) 修改HYS变量类型
+ (tag: V1.2) 解决ADC通道配置函数错误的问题
+ (tag: V1.1) 解决编译器警告
+ (tag: V1.0) 格式化c文件，删除LIB，改为.S，修改了部分函数
+ (tag: V0.8) 解决Flash和NVR数据写入异常的问题
+ (tag: V0.7) 解决串口编译警告
+ (tag: 0.6) 完善UART库函数
+ (tag: V0.6) 增加了一些库函数接口，修复了一些问题
+ (tag: V0.5) 补充TRIM_ReadUid函数声明
+ (tag: V0.4) 增加芯片ID读取函数TRIM_ReadUid
+ (tag: V0.3) Delete README.md

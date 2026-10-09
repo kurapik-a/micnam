@@ -1,0 +1,50 @@
+{
+  "version": 4,
+  "configurations": [
+    {
+      "name": "master (AT32F435)",
+      "compilerPath": "D:/Program Files/Keil5/ARM/ARMCC/bin/armcc.exe",
+      "intelliSenseMode": "gcc-arm",
+      "cStandard": "c99",
+      "defines": [
+        "AT32F435ZMT7",
+        "USE_STDPERIPH_DRIVER",
+        "AT_START_F435_V1"
+      ],
+      "includePath": [
+        "${workspaceFolder}/micnam_master/inc",
+        "${workspaceFolder}/micnam_master/src",
+        "${workspaceFolder}/micnam_master/modules",
+        "${workspaceFolder}/micnam_master/modules/QMI8658",
+        "${workspaceFolder}/micnam_master/components",
+        "${workspaceFolder}/micnam_master/components/OLED",
+        "${workspaceFolder}/micnam_master/components/jy61p",
+        "${workspaceFolder}/micnam_master/components/i2c_application_library",
+        "${workspaceFolder}/micnam_master/components/freertos/source",
+        "${workspaceFolder}/micnam_master/components/freertos/source/include",
+        "${workspaceFolder}/micnam_master/components/freertos/source/portable/rvds/ARM_CM4F",
+        "${workspaceFolder}/micnam_master/components/freertos/source/portable/memmang",
+        "${workspaceFolder}/micnam_master/libs/drivers/inc",
+        "${workspaceFolder}/micnam_master/libs/cmsis/cm4/core_support",
+        "${workspaceFolder}/micnam_master/libs/cmsis/cm4/device_support",
+        "${workspaceFolder}/micnam_master/libs/at32f435_437_board",
+        "D:/Program Files/Keil5/ARM/ARMCC/include"
+      ]
+    },
+    {
+      "name": "wheel (LKS32MC454)",
+      "compilerPath": "D:/Program Files/Keil5/ARM/ARMCC/bin/armcc.exe",
+      "intelliSenseMode": "gcc-arm",
+      "cStandard": "c99",
+      "defines": [],
+      "includePath": [
+        "${workspaceFolder}/micnam_wheel/src",
+        "${workspaceFolder}/micnam_wheel/libs/Include",
+        "${workspaceFolder}/micnam_wheel/libs/Source",
+        "D:/Program Files/Keil5/ARM/PACK/Linko/LKS45x/1.2.4/Device/Include",
+        "D:/Program Files/Keil5/ARM/PACK/Linko/LKS45x/1.2.4/Device/Source/ARM",
+        "D:/Program Files/Keil5/ARM/ARMCC/include"
+      ]
+    }
+  ]
+}

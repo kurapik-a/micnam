@@ -9,3 +9,7 @@
 .vscode/*.lock
 **/.vscode/*.log
 **/.vscode/*.lock
+
+# Local device packs and Word documents
+*.pack
+*.docx
